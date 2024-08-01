@@ -14,9 +14,7 @@ form.addEventListener('submit', function(e) {
 
     const name = nameInput.value;
     const kms = parseInt(kmsInput.value, 10);
-    const selectedAgeText = ageSelect.options[ageSelect.selectedIndex].text; // Ottieni il testo dell'opzione selezionata
-
-
+    const selectedAgeText = ageSelect.options[ageSelect.selectedIndex].text; 
     
     const basePrice = kms * pricePerKm;
     let finalPrice = basePrice;
