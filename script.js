@@ -1,11 +1,14 @@
 //Preparazione: check JS / richiamo elementi nel dom
 
 console.log('JS OK')
-const name = document.querySelector ('name');
-const kms = document.querySelector ('kms');
-const age = document.querySelector ('age');
+const name = document.querySelector ('#name');
+const kms = document.querySelector ('#kms');
+const age = document.querySelector ('#age');
 const button = document.querySelector ('button');
 const paragraph = document.querySelector ('p');
+console.log('name', name)
+console.log('kms', kms)
+console.log('age', age)
 
 //
 
