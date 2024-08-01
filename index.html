@@ -3,18 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script defer src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
+    <div class="container-fluid bg-primary text-white p-3">
     <div id="total" class="h2"></div>
 
+   
+
     <form id="ticket">
-        <input id="name" type="text" placeholder="Nome Cognome">
-        <input id="kms" type="number" placeholder="Km da percorrere?">
-        <input id="age" type="number" placeholder="età?">
-        <button type="submit">Genera</button>
-        <p id="paragraph"></p>
-    </form>
+  <fieldset>
+    <legend>Calcola il prezzo del tuo biglietto!</legend>
+    <div class="mb-3">
+      <label for="name" class="form-label">Nome e Cognome</label>
+      <input type="text" id="name" class="form-control" placeholder="Daniele Innamorato">
+    </div>
+    <div class="mb-3">
+        <label for="kms" class="form-label">Km da percorrere</label>
+        <input type="number" id="kms" class="form-control" placeholder="300">
+      </div>
+  
+      <div class="mb-3">
+        <label for="age" class="form-label">Età</label>
+        <select id="age" class="form-select">
+            <option value="0" selected>Seleziona un'età</option>
+            <option value="1">Under 18</option>
+            <option value="2">Over 18</option>
+            <option value="3">Over 65</option>
+        </select>
+    </div>
+    
+    <button type="submit" class="btn btn-light">Genera</button>
+  </fieldset>
+</form>
+<p id="paragraph" class="mt-4"></p>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
