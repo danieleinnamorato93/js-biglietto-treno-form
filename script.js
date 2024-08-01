@@ -10,7 +10,14 @@ console.log('name', name)
 console.log('kms', kms)
 console.log('age', age)
 
-//
+const pricePerKm = 0.21;
+let discount = null ;
+
+//Gestione Eventi
+button.addEventListener('click' , function (e) {
+    e.preventDefault
+
+}
 
 
 
